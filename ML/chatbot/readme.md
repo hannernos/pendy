@@ -11,19 +11,6 @@
   - vector_faissdb : 임베딩한 데이터
 
 
-## 할 일
-- embedding 폴더 txt -> dir 경로 수정 후 한번에 진행
-- stream, prompt 비교해 보고
-- front에서 cookie, session 등으로 한번씩 넣어줄 수 있는지
-
-## 연결 위치
-- S09P22A410 frontend src templates chatbot-template ChatBotTemplate.js
-
-## 오류
-
-
-
-
 ## 개선점
 ### 만족스럽지 않은 응답
 - req :     req = {
@@ -52,9 +39,7 @@
 - 각 파일에 "재미있는", "이야기"와 같은 키워드를 추가해주었습니다
 - 결과 : 재미있는 이야기를 해달라는 질문에 대해서 이전보다 원본에 가까운 형태로 이야기가 나옵니다
 
-#### to do
-- autogpt / 단순 txt 생성 외에 요청 분석해서 특정 동작 수행하도록 적용 가능하도록
-
+#### 개선 3 : 해당 기능은 front에서 ML을 통하지 않고 즉시 return
 
 ## res, req 예시
 ### 01  
