@@ -31,7 +31,7 @@
 
 # 아키텍처
 
-![image](/uploads/7f17a7c59391e17b6d82f36f504eb932/image.png)
+![image](https://github.com/hannernos/pendy/assets/82031197/0f71518a-4ecc-4038-905a-7e7a90714941)
 
 # 기술 스택
 
@@ -52,9 +52,6 @@
 
 - "react": "18.2.0"
 
-# 팀원 소개 및 협업 툴
-
-![image](/uploads/55f73d6ee41dbe82cdf0e24522d3e567/image.png)
 
 - GitLab
   - 코드 버전 관리
