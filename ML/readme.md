@@ -1,4 +1,3 @@
-(개발중)
 
 # Contents
 - 개요
@@ -7,21 +6,19 @@
 
 # 개요
 - fast api 이용 api 서버로 운용
-- 인터프리터 : python 3.9
+- 인터프리터 : python 3.11
 
 
 # 주요 기능
-## 일기 _ 완료
+## 일기 
 - gpt + langchain
-## 월별 보고서 _ 완성중
-- 소비 내역 데이터는 카드 추천이 가장 적합하다고 판단되어 카드 추천 기능을 제공합니다
-- 카드 정보 일단 삼성카드로 10개 정도만 넣어두었음
+## 월별 보고서
+- 소비 내역 데이터는 카드 추천이 가장 적합하다고 판단되어 카드 추천 기능을 제공합니다(삼성카드)
 
-## 챗봇 _ 미구현 상태
-- 자료 조사 완료
-
-## 챗봇 _ chatbot
-- chromadb에 금융 관련 정보를 임베딩(텍스트를 ml에서 사용되는 vector화)하고 
+## 챗봇 
+- 튜토리얼과 재미있는 유머는 빠른 응답을 위해 front end에서 return합니다
+- 이 외 검색은 임베딩된 텍스트를 통해 다양한 질의에도 대답할 수 있습니다.
+- FAISS에 금융 관련 정보를 임베딩하고 
   - OpenAI의 chat gpt를 이용해서 similarity_search_with_score로 탐색
 - 생성형 AI의 특성상 모르는 정보를 지어내서 대답할 수도 있어서 명시적으로 모르는 경우 모른다고 대답하라고 명령해야 합니다
 - Prompt Engineering
@@ -37,7 +34,7 @@
 # 기술 스택
 
 - Langchain
-- chromadb
+- FAISS
 - chat gpt
   - prompt engineering
 - fastapi
@@ -49,7 +46,7 @@
 
 ## 포팅 매뉴얼
 ### openai api key
-- ML/openaikey.py 파일에 openai api key를 넣어주세요
+- .env 파일을 생성하고 apikey = {발급받은 키를 넣어주세요}
 ### 가상환경(virtual venv)
 - python -m venv myvenv 로 가상환경을 만들어주세요
 - source myvenv/Scripts/activate 로 가상환경을 실행해주세요
@@ -57,16 +54,6 @@
 - pip install -r requirements.txt 로 필요한 패키지를 설치해주세요
 ### main.py run
 - main.py 파일을 run 해주세요
-
-
-
-## 현재 진행
-### 월별 리포트
-- 카드 정보 스크래이핑 중 (삼성카드)
-- 카드 정보 임베딩
-
-### Todo
-- 월별 리포트 임베딩, req 포멧 확인
 
 
 # 오류 정리
