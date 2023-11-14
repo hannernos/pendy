@@ -31,7 +31,7 @@
 
 # 아키텍처
 
-![image](https://github.com/hannernos/pendy/assets/82031197/0f71518a-4ecc-4038-905a-7e7a90714941)
+![image](./imgs/draw.jpg)
 
 # 기술 스택
 
